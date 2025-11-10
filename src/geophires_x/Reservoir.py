@@ -287,7 +287,7 @@ class Reservoir:
         self.fracnumb = self.ParameterDict[self.fracnumb.Name] = intParameter(
             "Number of Fractures",
             DefaultValue=10,
-            AllowableRange=list(range(1, 99999, 1)),
+            AllowableRange=list(range(1, 100_000, 1)),
             UnitType=Units.NONE,
             ErrMessage="assume default number of fractures (10)",
             ToolTipText="Number of identical parallel fractures in EGS fracture-based reservoir model."
@@ -545,7 +545,7 @@ class Reservoir:
         # This also deals with all the special cases that need to be taken care of
         # after a value has been read in and checked.
         # If you choose to subclass this master class, you can also choose to override this method (or not),
-        # and if you do, do it before or after you call your own version of this method.  If you do, you can
+        # and if you do, do it before or after you call you own version of this method.  If you do, you can
         # also choose to call this method from you class, which can effectively modify all these
         # superclass parameters in your class.
 

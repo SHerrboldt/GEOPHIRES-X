@@ -388,7 +388,7 @@ class SBTReservoir(CylindricalReservoir):
         # SBT v2 for co-axial heat exchanger with high-temperature capability
         # last update: January 14th, 2024
 
-        # 1. Inputs
+        # 1. Input
         # Generally, the user should only make changes to this section
 
         fluid = 1  # Heat transfer fluid selection: 1 = H2O; 2 = CO2

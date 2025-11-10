@@ -1023,7 +1023,7 @@ class WellBores:
             ToolTipText='; '.join([f'{it.int_value}: {it.value}' for it in WorkingFluid])
         )
 
-        # Inputs data for subsurface condition
+        # Input data for subsurface condition
         self.Nonvertical_length = self.ParameterDict[self.Nonvertical_length.Name] = floatParameter(
             "Nonvertical Length per Multilateral Section",
             DefaultValue=1000.0,
